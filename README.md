@@ -30,6 +30,7 @@ The catalog uses open formats, so it works with any agent that reads them:
 
 | Plugin | Tool | What the skill does |
 | --- | --- | --- |
+| [cds-guard](https://github.com/cbs-consulting/cds-guard) | Stops accidental changes to protected CDS entities, annotations, code blocks and files in CAP and UI5 projects | Sets up `@cbs-consulting/cds-guard`, checks whether a file is protected before the agent edits it, runs `check` afterwards, and locks only changes the user asked for. |
 | [eslint-plugin-cds](https://github.com/cbs-consulting/eslint-plugin-cds) | ESLint rules for SAP CAP CDS models | Sets up `@cbs-consulting/eslint-plugin-cds` in CAP projects and lints `.cds` files as the agent edits them. |
 
 ## 🚀 Install

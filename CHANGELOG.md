@@ -8,3 +8,5 @@ the date.
 
 - First version of the catalog, with the eslint-plugin-cds plugin. It installs in Codex, GitHub
   Copilot CLI and Claude Code, and the skill installs in other agents with `npx skills add`.
+- New cds-guard plugin. Its skill sets up `@cbs-consulting/cds-guard` and keeps the agent from
+  changing protected CDS entities, annotations, code blocks and files by accident.

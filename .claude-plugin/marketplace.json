@@ -9,6 +9,15 @@
   },
   "plugins": [
     {
+      "name": "cds-guard",
+      "description": "Sets up @cbs-consulting/cds-guard in CAP and UI5 projects and keeps coding agents from changing protected CDS entities, annotations, code blocks and files by accident.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cbs-consulting/cds-guard.git"
+      },
+      "category": "development"
+    },
+    {
       "name": "eslint-plugin-cds",
       "description": "Sets up @cbs-consulting/eslint-plugin-cds in SAP CAP projects and lints .cds files as you edit them.",
       "source": {

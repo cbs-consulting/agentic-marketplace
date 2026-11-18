@@ -18,6 +18,7 @@ body:
       label: Plugin
       multiple: true
       options:
+        - cds-guard
         - eslint-plugin-cds
         - The whole catalog
     validations:
