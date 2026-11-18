@@ -1,0 +1,23 @@
+{
+  "name": "agent-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Catalog of the agent skills and plugins that ship with cbs open source tools.",
+  "homepage": "https://github.com/cbs-consulting/agent-skills#readme",
+  "bugs": "https://github.com/cbs-consulting/agent-skills/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbs-consulting/agent-skills.git"
+  },
+  "license": "Apache-2.0",
+  "author": "cbs Corporate Business Solutions Unternehmensberatung GmbH",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "sync": "node scripts/sync-manifests.js",
+    "check:sources": "node scripts/check-sources.js"
+  }
+}

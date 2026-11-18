@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a cbs tool for the catalog, or support for another agent.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe what you can't do today, for example a tool without a skill or an agent that can't use the catalog.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Which tool or agent, and what should the skill or the install steps do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Workarounds or other solutions you considered.

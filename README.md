@@ -1,0 +1,122 @@
+<div align="center">
+
+<img src=".github/assets/logo.svg" alt="" width="120" />
+
+# cbs Agent Skills
+
+**The skills of cbs open source tools, for every coding agent, from one catalog.**
+
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-SKILL.md-0F4C5C)](https://agentskills.io)
+[![Agent Plugins](https://img.shields.io/badge/Agent%20Plugins-1.0-0F4C5C)](https://agent-plugins.org)
+
+</div>
+
+---
+
+Many cbs open source tools ship an agent skill: instructions that teach a coding agent how to set
+up and use the tool. This repository is the catalog of those skills. It holds no skills itself.
+Each skill lives in its tool's repository, next to the code it describes, and is released with it.
+
+The catalog uses open formats, so it works with any agent that reads them:
+
+- Skills follow the [Agent Skills](https://agentskills.io) standard (`skills/<name>/SKILL.md`).
+- Each tool repository is a plugin in the [Agent Plugins 1.0](https://agent-plugins.org) layout
+  (`plugin.json` and `skills/`).
+- The catalog is a `marketplace.json`, the plugin marketplace format that Codex, GitHub Copilot
+  CLI and Claude Code read.
+
+## ✨ Plugins
+
+| Plugin | Tool | What the skill does |
+| --- | --- | --- |
+| [eslint-plugin-cds](https://github.com/cbs-consulting/eslint-plugin-cds) | ESLint rules for SAP CAP CDS models | Sets up `@cbs-consulting/eslint-plugin-cds` in CAP projects and lints `.cds` files as the agent edits them. |
+
+## 🚀 Install
+
+Add the catalog once, then install the plugins you want. The catalog is called `cbs-consulting`.
+
+### Codex
+
+```bash
+codex plugin marketplace add cbs-consulting/agent-skills
+```
+
+Then open `/plugins` in Codex and install a plugin from **cbs Agent Skills**.
+
+### GitHub Copilot CLI
+
+```bash
+copilot plugin marketplace add cbs-consulting/agent-skills
+copilot plugin install eslint-plugin-cds@cbs-consulting
+```
+
+### Claude Code
+
+```text
+/plugin marketplace add cbs-consulting/agent-skills
+/plugin install eslint-plugin-cds@cbs-consulting
+```
+
+### Cursor, Gemini CLI, VS Code, OpenCode and other agents
+
+Agents that read Agent Skills but no plugin marketplace get the skill with the
+[`skills`](https://skills.sh) CLI. It copies the skill from the tool's repository into the
+agent's skills folder:
+
+```bash
+npx skills add cbs-consulting/eslint-plugin-cds
+```
+
+Add `-a <agent>` to pick the agent (for example `-a cursor` or `-a gemini-cli`) and `-g` to
+install for your user instead of the project. `npx skills add cbs-consulting/eslint-plugin-cds --list`
+shows the skills first.
+
+### By hand
+
+Copy the `skills/<name>` folder of the tool's repository into the skills folder of your agent,
+for example `.agents/skills/` in your project.
+
+## 📝 How it works
+
+```text
+cbs-consulting/agent-skills                 cbs-consulting/<tool>
+├── .agents/plugins/marketplace.json  ───►  ├── plugin.json        (Agent Plugins 1.0)
+└── .claude-plugin/marketplace.json   ───►  └── skills/<name>/SKILL.md
+```
+
+- **`.agents/plugins/marketplace.json`** is the catalog and the file to edit. Codex reads it.
+- **`.claude-plugin/marketplace.json`** is generated from it with `npm run sync`. Claude Code and
+  GitHub Copilot CLI read it.
+- Every entry points at the root of a tool's repository, at its default branch. The agent fetches
+  the plugin from there, so a skill change in a tool reaches users without a change here.
+
+## 🔧 Development
+
+Node.js 22 or newer, no dependencies.
+
+| What | Command |
+| --- | --- |
+| Check the catalog | `npm test` |
+| Regenerate `.claude-plugin/marketplace.json` | `npm run sync` |
+| Clone and check the listed repositories | `npm run check:sources` |
+
+## ❓ Questions
+
+- **Why are the skills not in this repository?** A skill describes one tool, so it changes with
+  that tool. Keeping it in the tool's repository means one pull request changes both, and the
+  tool's tests can check the skill.
+- **Can I use only the skill, without the plugin?** Yes. A plugin here is a skill plus metadata.
+  Use the `skills` CLI or copy the folder.
+- **Is there an official registry?** The open standards define skills and plugins, not a
+  registry. Each agent reads marketplace files from Git repositories, so this repository is the
+  registry for cbs tools.
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) to add a tool. Security problems go through the
+[Security Policy](SECURITY.md), not public issues.
+
+## 📄 License
+
+[Apache License 2.0](LICENSE), © 2026 cbs Corporate Business Solutions Unternehmensberatung GmbH.

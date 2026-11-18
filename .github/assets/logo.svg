@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect x="4" y="4" width="112" height="112" rx="24" fill="#EE7D01" />
+  <!-- shelf with three skill cards; the last one is being picked -->
+  <rect x="22" y="34" width="20" height="48" rx="4" fill="#FFFFFF" />
+  <rect x="48" y="34" width="20" height="48" rx="4" fill="#FCEAD6" />
+  <rect x="76" y="26" width="20" height="48" rx="4" fill="#FADBB8" transform="rotate(12 86 50)" />
+  <path d="M18 90 H102" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  <path d="M27 46 H37 M27 56 H35 M53 46 H63 M53 56 H61" fill="none" stroke="#F6B873" stroke-width="3" stroke-linecap="round" />
+</svg>
