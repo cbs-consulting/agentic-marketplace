@@ -9,7 +9,7 @@ report a security problem, follow the [Security Policy](SECURITY.md) instead of 
 
 ## Reporting bugs and requesting features
 
-Search the [existing issues](https://github.com/cbs-consulting/agent-skills/issues) first. A
+Search the [existing issues](https://github.com/cbs-consulting/agentic-marketplace/issues) first. A
 problem with what a skill tells the agent belongs in the tool's repository. Problems with
 installing from the catalog belong here.
 

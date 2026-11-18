@@ -1,6 +1,6 @@
 name: Release
 # Creates a GitHub release and tag with the version's CHANGELOG.md entry, so users can pin the
-# catalog (for example `codex plugin marketplace add cbs-consulting/agent-skills --ref v0.1.0`).
+# catalog (for example `codex plugin marketplace add cbs-consulting/agentic-marketplace --ref v0.1.0`).
 # Started by hand from the Actions tab; nothing runs until a maintainer approves the "release"
 # environment. Nothing is published to npm: the catalog is read from Git.
 on:
@@ -67,4 +67,4 @@ jobs:
           SHA: ${{ needs.check.outputs.sha }}
         run: |
           awk -v v="$VERSION" '$0 ~ "^## "v" " {on=1; next} /^## / {on=0} on' CHANGELOG.md > notes.md
-          gh release create "v$VERSION" --target "$SHA" --title "cbs Agent Skills $VERSION" --notes-file notes.md
+          gh release create "v$VERSION" --target "$SHA" --title "cbs Agentic Marketplace $VERSION" --notes-file notes.md

@@ -2,7 +2,7 @@
 
 <img src=".github/assets/logo.svg" alt="" width="120" />
 
-# cbs Agent Skills
+# cbs Agentic Marketplace
 
 **The skills of cbs open source tools, for every coding agent, from one catalog.**
 
@@ -39,22 +39,22 @@ Add the catalog once, then install the plugins you want. The catalog is called `
 ### Codex
 
 ```bash
-codex plugin marketplace add cbs-consulting/agent-skills
+codex plugin marketplace add cbs-consulting/agentic-marketplace
 ```
 
-Then open `/plugins` in Codex and install a plugin from **cbs Agent Skills**.
+Then open `/plugins` in Codex and install a plugin from **cbs Agentic Marketplace**.
 
 ### GitHub Copilot CLI
 
 ```bash
-copilot plugin marketplace add cbs-consulting/agent-skills
+copilot plugin marketplace add cbs-consulting/agentic-marketplace
 copilot plugin install eslint-plugin-cds@cbs-consulting
 ```
 
 ### Claude Code
 
 ```text
-/plugin marketplace add cbs-consulting/agent-skills
+/plugin marketplace add cbs-consulting/agentic-marketplace
 /plugin install eslint-plugin-cds@cbs-consulting
 ```
 
@@ -80,7 +80,7 @@ for example `.agents/skills/` in your project.
 ## 📝 How it works
 
 ```text
-cbs-consulting/agent-skills                 cbs-consulting/<tool>
+cbs-consulting/agentic-marketplace                 cbs-consulting/<tool>
 ├── .agents/plugins/marketplace.json  ───►  ├── plugin.json        (Agent Plugins 1.0)
 └── .claude-plugin/marketplace.json   ───►  └── skills/<name>/SKILL.md
 ```

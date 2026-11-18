@@ -1,13 +1,13 @@
 {
-  "name": "agent-skills",
+  "name": "agentic-marketplace",
   "version": "0.1.0",
   "private": true,
   "description": "Catalog of the agent skills and plugins that ship with cbs open source tools.",
-  "homepage": "https://github.com/cbs-consulting/agent-skills#readme",
-  "bugs": "https://github.com/cbs-consulting/agent-skills/issues",
+  "homepage": "https://github.com/cbs-consulting/agentic-marketplace#readme",
+  "bugs": "https://github.com/cbs-consulting/agentic-marketplace/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cbs-consulting/agent-skills.git"
+    "url": "git+https://github.com/cbs-consulting/agentic-marketplace.git"
   },
   "license": "Apache-2.0",
   "author": "cbs Corporate Business Solutions Unternehmensberatung GmbH",

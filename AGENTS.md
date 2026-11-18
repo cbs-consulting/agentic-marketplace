@@ -6,7 +6,7 @@ this repository. People are welcome to read them too. What the catalog is for is
 
 ## What this repository is
 
-`agent-skills` is the plugin marketplace for the agent skills of cbs open source tools. It lists
+`agentic-marketplace` is the plugin marketplace for the agent skills of cbs open source tools. It lists
 plugins; it holds no skills. Each plugin is the root of a tool's repository, with an Agent Plugins
 1.0 `plugin.json` and Agent Skills in `skills/<name>/SKILL.md`.
 

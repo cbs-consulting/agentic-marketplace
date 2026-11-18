@@ -1,7 +1,7 @@
 {
   "name": "cbs-consulting",
   "interface": {
-    "displayName": "cbs Agent Skills"
+    "displayName": "cbs Agentic Marketplace"
   },
   "plugins": [
     {

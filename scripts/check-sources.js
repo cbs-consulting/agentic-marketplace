@@ -8,7 +8,7 @@ import { CATALOG, readJson, validatePluginRepository } from "./lib.js";
 
 const only = process.argv.slice(2);
 const plugins = readJson(CATALOG).plugins.filter((plugin) => only.length === 0 || only.includes(plugin.name));
-const temp = fs.mkdtempSync(path.join(os.tmpdir(), "agent-skills-"));
+const temp = fs.mkdtempSync(path.join(os.tmpdir(), "agentic-marketplace-"));
 let failed = false;
 
 try {

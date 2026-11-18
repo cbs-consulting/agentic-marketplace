@@ -8,7 +8,7 @@ Only the current state of the `main` branch is supported. Agents read the catalo
 
 Do not open a public issue for a security problem. Report it privately in one of these ways:
 
-- Through [GitHub private vulnerability reporting](https://github.com/cbs-consulting/agent-skills/security/advisories/new).
+- Through [GitHub private vulnerability reporting](https://github.com/cbs-consulting/agentic-marketplace/security/advisories/new).
 - By email to [cp_opensource@cbs-consulting.de](mailto:cp_opensource@cbs-consulting.de),
   with [administrator@cbs-consulting.de](mailto:administrator@cbs-consulting.de) in copy.
 
