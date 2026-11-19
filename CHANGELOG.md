@@ -17,5 +17,8 @@ the date.
   Container Templates and helps when the container or the project generator does not start.
 - New virtual-key-mapper plugin. Its skill `vkm-setup` sets up `vkm` for the user: the gateway
   profile, the sign-in, the connected tools and a repository's labels.
+- New generator-btp plugin. Its skill sets up SAP CAP projects with
+  `@cbs-consulting/generator-btp`: it asks what the project needs, runs the generator and goes
+  through the next steps.
 - New stack-sentinel plugin. Its skill sets up `@cbs-consulting/stack-sentinel`: a first scan,
   the weekly pipeline for GitHub Actions or Azure DevOps, and the settings the user makes.

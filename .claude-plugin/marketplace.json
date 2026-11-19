@@ -36,6 +36,15 @@
       "category": "development"
     },
     {
+      "name": "generator-btp",
+      "description": "Sets up SAP CAP projects with @cbs-consulting/generator-btp: asks what the project needs, runs the generator without interactive prompts, and walks through the next steps.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/cbs-consulting/generator-btp.git"
+      },
+      "category": "development"
+    },
+    {
       "name": "stack-sentinel",
       "description": "Sets up @cbs-consulting/stack-sentinel in SAP UI5, CAP and Node.js projects: the weekly scan pipeline on GitHub Actions or Azure DevOps, Teams reports, fix pull requests and ignore rules.",
       "source": {
